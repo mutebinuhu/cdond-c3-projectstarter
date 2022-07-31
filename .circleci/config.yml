@@ -48,7 +48,7 @@ jobs:
           command: cd frontend
       - run:
           name: run install
-          command: npm run install
+          command: npm install
       - run:
           name: run build
           command: npm run build
@@ -70,7 +70,7 @@ jobs:
           command: cd frontend
       - run:
           name: run install
-          command: npm run install
+          command: npm  install
       - run:
           name: run build
           command: npm run build
