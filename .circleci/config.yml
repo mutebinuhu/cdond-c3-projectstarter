@@ -45,7 +45,7 @@ jobs:
           keys: [frontend-build]
       - run:
           name: move to frontend
-          command: cd frontend
+          command: cd /frontend
       - run:
           name: run install
           command: npm install
@@ -66,8 +66,8 @@ jobs:
       - restore_cache:
           keys: [backend-build]
       - run:
-          name: move to frontend
-          command: cd frontend
+          name: move to backend
+          command: cd /frontend
       - run:
           name: run install
           command: npm  install
