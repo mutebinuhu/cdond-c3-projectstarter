@@ -45,7 +45,11 @@ jobs:
           keys: [frontend-build]
       - run:
           name: move to frontend
-          command: cd /frontend
+          command: cd ..
+
+      - run:
+          name: move to fronted
+          command: cd frontend
       - run:
           name: run install
           command: npm install
@@ -67,7 +71,10 @@ jobs:
           keys: [backend-build]
       - run:
           name: move to backend
-          command: cd /frontend
+          command: cd ..
+      - run:
+          name: move to backend
+          command: cd backend
       - run:
           name: run install
           command: npm  install
